@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[마포 백링크 자동화 프로그램]]></title>
-  <link>https://sf-t3-1779642675702-167.pages.dev</link>
-  <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 12:25:15 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 12:25:15 GMT</lastBuildDate>
-  <atom:link href="https://sf-t3-1779642675702-167.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[서버 웜업]]></title>
+  <link>https://sf-t3-1779642675702-167.vercel.app</link>
+  <description><![CDATA[서버 웜업 - 백링크 자동화 프로그램 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 17:13:34 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 17:13:34 GMT</lastBuildDate>
+  <atom:link href="https://sf-t3-1779642675702-167.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[마포 백링크 자동화 프로그램 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://sf-t3-1779642675702-167.pages.dev/</link>
-      <guid isPermaLink="true">https://sf-t3-1779642675702-167.pages.dev/</guid>
-      <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 12:25:15 GMT</pubDate>
+      <title><![CDATA[백링크 자동화 프로그램 현장에서 놓치기 쉬운 포인트를 기록해봤다]]></title>
+      <link>https://sf-t3-1779642675702-167.vercel.app/posts/field_note-002-lbhnk7.html</link>
+      <guid isPermaLink="true">https://sf-t3-1779642675702-167.vercel.app/posts/field_note-002-lbhnk7.html</guid>
+      <description><![CDATA[### 포스트 메타정보포스트 기획 테마: 백링크 자동화 프로그램 현장에서 놓치기 쉬운 포인트를 기록해봤다 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: ishikyujin.space ## 구체적 니치 콘텐츠 작성 ### 주제1997년 IM]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://sf-t3-1779642675702-167.vercel.app/posts/review-001-lbhnk7.html</link>
+      <guid isPermaLink="true">https://sf-t3-1779642675702-167.vercel.app/posts/review-001-lbhnk7.html</guid>
+      <description><![CDATA[아, 진짜… 지난 2023년 겨울, 서버실 온도가 42도까지 올라갔던 날, 기록된 내부 평가표를 통해 최종 면접에서 면접관이 실수로 보여준 내부 평가표의 점수 체계에 대한 갈등을 경험하게 되었습니다. ### 구체성 포인트- **버전명**: 2024년 연봉협상 가이드라인]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
