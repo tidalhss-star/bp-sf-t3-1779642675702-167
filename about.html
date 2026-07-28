@@ -254,79 +254,71 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="/" class="logo">백링크 파괴자</a>
-        <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('nav ul').classList.toggle('active')">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul>
-            <li><a href="/">홈</a></li>
-            <li><a href="/info">정보</a></li>
-            <li><a href="/pricing">가격</a></li>
-            <li><a href="/contact">문의</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <section class="section">
-            <h1>정보</h1>
-            <p class="glow" style="margin-top: 1rem;">마포에서 직접 굴리는 백링크 자동화 프로그램. 서버 웜업부터 PBN 구축까지 — 니 사이트를 구글 1페이지에 박아넣는다.</p>
-            <hr style="border-color: #f0f; margin: 2rem 0;">
-        </section>
+<main>
+  <section class="section full-bleed">
+    <h1>백링크 자동화 프로그램과 서버 웜업, 함께 알아야 하는 이유</h1>
+    <p>백링크 자동화 프로그램은 반복적인 링크 등록·관리 작업을 도구로 처리해 운영 효율을 높이는 방식입니다. 다만 새 도메인이나 서버를 급하게 사용하면 신뢰도 이슈가 생길 수 있어, 서버 웜업(warm-up) 과정과 함께 이해하는 것이 좋습니다. 마포 권역에서 관련 정보를 참고하는 운영자를 위해 기본 개념을 정리했습니다.</p>
+  </section>
 
-        <section class="section">
-            <h2>이게 뭔데?</h2>
-            <div class="card">
-                <h3>서버 웜업 + 백링크 자동화</h3>
-                <p>죽은 서버 살리고, 구글 봇이 자주 찾아오게 만든다. PBN 링크를 자동으로 생성하고, 색인 속도를 3배 이상 올린다. 너가 직접 하나하나 하던 시절은 끝났다.</p>
-            </div>
-            <div class="card">
-                <h3>왜 마포인가?</h3>
-                <p>서울 마포 — 스타트업과 개발자들이 모여드는 곳. 여기서 굴리는 프로그램은 더럽게 빠르고, 더럽게 효과적이다. 지역 기반 서버 최적화로 지연시간 제로.</p>
-            </div>
-        </section>
+  <section class="section">
+    <h2>수동 관리와 자동화 프로그램 비교</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>수동 관리</th>
+          <th>자동화 프로그램</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>소요 시간</td>
+          <td>등록·점검마다 개별 작업 필요</td>
+          <td>반복 작업을 예약·일괄 처리</td>
+        </tr>
+        <tr>
+          <td>기록 관리</td>
+          <td>별도 문서로 직접 정리</td>
+          <td>등록 현황이 도구 내에 자동 기록</td>
+        </tr>
+        <tr>
+          <td>확장성</td>
+          <td>사이트 수가 늘면 관리 부담 증가</td>
+          <td>다수 사이트를 같은 방식으로 관리 가능</td>
+        </tr>
+        <tr>
+          <td>초기 준비</td>
+          <td>별도 설정 없이 바로 시작 가능</td>
+          <td>서버·계정 웜업 등 사전 준비가 필요</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-        <section class="section">
-            <h2>핵심 기능</h2>
-            <ul style="list-style: none; padding: 0;">
-                <li style="background: #1a1a1a; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #0ff;">✅ 서버 웜업 — 콜드 스타트 제거, 항상 뜨거운 서버 유지</li>
-                <li style="background: #1a1a1a; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #0ff;">✅ 백링크 자동 생성 — AI 기반 컨텍스트 매칭, 죽은 링크 자동 교체</li>
-                <li style="background: #1a1a1a; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #0ff;">✅ 구글 패널티 복구 — 페널티 먹은 사이트도 살려낸다 (조건 있음)</li>
-                <li style="background: #1a1a1a; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #0ff;">✅ PBN 구축 자동화 — 도메인 발굴부터 호스팅, 콘텐츠까지 한방에</li>
-            </ul>
-        </section>
+  <section class="section">
+    <h2>서버 웜업이 필요한 이유</h2>
+    <div class="card glow border-glow">
+      <p>새로 준비한 서버나 도메인을 처음부터 많은 요청과 함께 사용하면 이상 신호로 분류될 수 있습니다. 초기에는 사용량을 낮게 유지하고 점차 늘려가는 방식이 일반적으로 권장됩니다.</p>
+    </div>
+  </section>
 
-        <section class="section">
-            <h2>FAQ</h2>
-            <div class="faq-item">
-                <div class="faq-question">Q. 이거 불법 아니에요?</div>
-                <div class="faq-answer">A. 불법 아니다. 구글 웹마스터 가이드라인을 존중하지만, 우리 방식은 '회색지대'에서 논다. 게임의 규칙을 바꾸는 거지, 규칙을 어기는 게 아니다.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Q. 서버 웜업이 뭐에요?</div>
-                <div class="faq-answer">A. 서버가 처음 켜질 때 느려지는 현상을 없애는 기술. 우리 프로그램이 주기적으로 요청을 보내서 서버를 항상 '뜨겁게' 유지한다. 덕분에 구글 봇이 방문할 때도 빠르게 응답해서 색인 속도가 올라간다.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Q. 마포 지역만 되나요?</div>
-                <div class="faq-answer">A. 서버는 마포에 두고 전국, 전 세계를 커버한다. 하지만 현장 작업(서버 랙, 네트워크 최적화)은 마포/상암 지역 우선. 다른 지역은 협의 가능.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Q. 가격은 어떻게 되나요?</div>
-                <div class="faq-answer">A. 기본 월 30만원부터 시작. 전체 자동화 패키지는 100만원. 010-6279-0862로 전화하면 할인 코드 준다.</div>
-            </div>
-        </section>
+  <section class="faq-item">
+    <p class="faq-question">자동화 프로그램을 쓰면 웜업 과정이 필요 없나요?</p>
+    <p class="faq-answer">자동화 도구를 사용하더라도 새 서버나 계정이라면 초기 사용량 조절 과정은 별도로 필요합니다.</p>
+  </section>
+  <section class="faq-item">
+    <p class="faq-question">초보자도 바로 활용할 수 있나요?</p>
+    <p class="faq-answer">기본 개념을 먼저 익힌 뒤 적용하면 시행착오를 줄일 수 있어, 개념 이해를 우선 권장합니다.</p>
+  </section>
 
-        <section class="section" style="text-align: center;">
-            <h2>지금 전화하세요</h2>
-            <p style="margin: 1rem 0;">니 사이트가 느리다고? 구글에 안 뜬다고? 백링크가 없다고?<br>마포 백링크 파괴자가 해결한다.</p>
-            <a href="tel:+821062790862" class="tel-link">📞 010-6279-0862</a>
-            <p style="margin-top: 2rem; font-size: 0.9rem; color: #888;">상담은 무료. 필요하면 밤에도 받는다.</p>
-        </section>
-    </main>
+  <section class="section">
+    <h2>연락 방법</h2>
+    <p>마포 권역 관련 문의는 아래 연락처를 이용해주세요.</p>
+    <a class="btn tel-link" href="tel:+821062790862">+821062790862</a>
+  </section>
+</main>
 
-    <footer>
-        <p>© 2025 백링크 파괴자 | 마포 직영 | 전화
+
 </body>
 </html>
