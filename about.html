@@ -1,322 +1,320 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정보 | 백링크 자동화 프로그램 | 서버 웜업 마포</title>
-    <meta name="description" content="서버 웜업부터 백링크 자동화까지. 마포에서 직접 굴리는 프로그램. 느린 색인, 죽은 링크, 구글 패널티? 니 문제를 해결한다. 010-6279-0862">
-    <meta name="keywords" content="백링크 자동화 프로그램, 서버 웜업, 마포 백링크, 백링크 파괴자, 자동 백링크 생성기, PBN 백링크, 백링크 소프트웨어">
-    <meta name="author" content="백링크 파괴자">
-    <link rel="canonical" href="https://sf-t3-1779642675702-167.maphoshirts.xyz/about.html">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <!-- Open Graph / Twitter Card -->
-    <meta property="og:title" content="정보 | 백링크 자동화 프로그램 | 서버 웜업 마포">
-    <meta property="og:description" content="서버 웜업부터 백링크 자동화까지. 마포에서 직접 굴리는 프로그램. 느린 색인, 죽은 링크, 구글 패널티? 니 문제를 해결한다. 010-6279-0862">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sf-t3-1779642675702-167.maphoshirts.xyz/about.html">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="정보 | 백링크 자동화 프로그램 | 서버 웜업 마포">
-    <meta name="twitter:description" content="서버 웜업부터 백링크 자동화까지. 마포에서 직접 굴리는 프로그램. 느린 색인, 죽은 링크, 구글 패널티? 니 문제를 해결한다.">
-    <style>
-        /* RESET & BASE */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-        }
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.5;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        /* TYPOGRAPHY */
-        h1, h2, h3, h4 {
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #f0f;
-        }
-        h1 {
-            font-size: 3rem;
-            line-height: 1.1;
-            text-shadow: 0 0 20px #f0f, 0 0 40px #f0f;
-        }
-        h2 {
-            font-size: 2rem;
-            border-left: 6px solid #f0f;
-            padding-left: 1rem;
-            margin: 2rem 0 1rem;
-        }
-        h3 {
-            font-size: 1.5rem;
-            color: #fff;
-        }
-        p, li, blockquote {
-            font-size: 1rem;
-            color: #ccc;
-        }
-        a {
-            color: #0ff;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-            transition: color 0.2s;
-        }
-        a:hover {
-            color: #f0f;
-            text-shadow: 0 0 10px #f0f;
-        }
-        /* BUTTON / CTA */
-        .btn {
-            display: inline-block;
-            background: #f0f;
-            color: #0a0a0a;
-            padding: 0.8rem 2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-            border: 2px solid #f0f;
-            letter-spacing: 0.2em;
-            transition: 0.2s;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background: #0a0a0a;
-            color: #f0f;
-            box-shadow: 0 0 30px #f0f;
-        }
-        /* LAYOUT HELPERS */
-        .full-bleed {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-        }
-        .section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 1.5rem;
-        }
-        /* NAV */
-        nav {
-            background: #111;
-            padding: 1rem 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #f0f;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #f0f;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: 0.2em;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-        nav ul li a {
-            color: #ccc;
-            text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.1em;
-            transition: 0.2s;
-        }
-        nav ul li a:hover {
-            color: #f0f;
-        }
-        /* HAMBURGER - hidden by default */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 5px;
-        }
-        .hamburger span {
-            display: block;
-            width: 30px;
-            height: 3px;
-            background: #f0f;
-            transition: 0.3s;
-        }
-        /* RESPONSIVE 768 */
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #111;
-                padding: 1rem;
-                border-bottom: 2px solid #f0f;
-            }
-            nav ul.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            .section {
-                padding: 2rem 1rem;
-            }
-        }
-        /* TEL LINK */
-        .tel-link {
-            display: inline-block;
-            background: #0ff;
-            color: #0a0a0a;
-            padding: 0.6rem 1.5rem;
-            font-weight: 700;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            border: 2px solid #0ff;
-            transition: 0.2s;
-        }
-        .tel-link:hover {
-            background: transparent;
-            color: #0ff;
-            box-shadow: 0 0 20px #0ff;
-        }
-        /* CARDS */
-        .card {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            box-shadow: 4px 4px 0 #f0f;
-        }
-        .card h3 {
-            margin-bottom: 0.5rem;
-        }
-        /* FAQ */
-        .faq-item {
-            border-bottom: 1px solid #333;
-            padding: 1rem 0;
-        }
-        .faq-question {
-            font-weight: 700;
-            color: #f0f;
-            cursor: pointer;
-            font-size: 1.1rem;
-        }
-        .faq-answer {
-            margin-top: 0.5rem;
-            color: #aaa;
-        }
-        /* FOOTER */
-        footer {
-            background: #111;
-            text-align: center;
-            padding: 2rem 1rem;
-            border-top: 2px solid #f0f;
-            margin-top: auto;
-        }
-        footer p {
-            font-size: 0.8rem;
-            color: #888;
-        }
-        /* ADDITIONAL NEON EFFECTS */
-        .glow {
-            text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-        }
-        .border-glow {
-            border-color: #f0f;
-            box-shadow: 0 0 10px #f0f;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>정보 | 백링크 자동화 프로그램 | 서버 웜업 마포</title>
+ <meta name="description" content="서버 웜업부터 백링크 자동화까지. 마포에서 직접 굴리는 프로그램. 느린 색인, 죽은 링크, 구글 패널티? 니 문제를 해결한다.">
+ <meta name="keywords" content="백링크 자동화 프로그램, 서버 웜업, 마포 백링크, 백링크 파괴자, 자동 백링크 생성기, PBN 백링크, 백링크 소프트웨어">
+ <meta name="author" content="백링크 파괴자">
+ <link rel="canonical" href="https://sf-t3-1779642675702-167.maphoshirts.xyz/about.html">
+ <!-- Open Graph / Twitter Card -->
+ <meta property="og:title" content="정보 | 백링크 자동화 프로그램 | 서버 웜업 마포">
+ <meta property="og:description" content="서버 웜업부터 백링크 자동화까지. 마포에서 직접 굴리는 프로그램. 느린 색인, 죽은 링크, 구글 패널티? 니 문제를 해결한다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://sf-t3-1779642675702-167.maphoshirts.xyz/about.html">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="정보 | 백링크 자동화 프로그램 | 서버 웜업 마포">
+ <meta name="twitter:description" content="서버 웜업부터 백링크 자동화까지. 마포에서 직접 굴리는 프로그램. 느린 색인, 죽은 링크, 구글 패널티? 니 문제를 해결한다.">
+ <style>
+ /* RESET & BASE */
+ *, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ html {
+ scroll-behavior: smooth;
+ -webkit-text-size-adjust: 100%;
+ }
+ body {
+ font-family: 'Courier New', Courier, monospace;
+ background: #0a0a0a;
+ color: #e0e0e0;
+ line-height: 1.5;
+ padding: 0;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ }
+ /* TYPOGRAPHY */
+ h1, h2, h3, h4 {
+ font-weight: 800;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: #f0f;
+ }
+ h1 {
+ font-size: 3rem;
+ line-height: 1.1;
+ text-shadow: 0 0 20px #f0f, 0 0 40px #f0f;
+ }
+ h2 {
+ font-size: 2rem;
+ border-left: 6px solid #f0f;
+ padding-left: 1rem;
+ margin: 2rem 0 1rem;
+ }
+ h3 {
+ font-size: 1.5rem;
+ color: #fff;
+ }
+ p, li, blockquote {
+ font-size: 1rem;
+ color: #ccc;
+ }
+ a {
+ color: #0ff;
+ text-decoration: underline;
+ text-underline-offset: 4px;
+ transition: color 0.2s;
+ }
+ a:hover {
+ color: #f0f;
+ text-shadow: 0 0 10px #f0f;
+ }
+ /* BUTTON / CTA */
+ .btn {
+ display: inline-block;
+ background: #f0f;
+ color: #0a0a0a;
+ padding: 0.8rem 2rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ text-decoration: none;
+ border: 2px solid #f0f;
+ letter-spacing: 0.2em;
+ transition: 0.2s;
+ cursor: pointer;
+ }
+ .btn:hover {
+ background: #0a0a0a;
+ color: #f0f;
+ box-shadow: 0 0 30px #f0f;
+ }
+ /* LAYOUT HELPERS */
+ .full-bleed {
+ width: 100vw;
+ margin-left: calc(-50vw + 50%);
+ }
+ .section {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 4rem 1.5rem;
+ }
+ /* NAV */
+ nav {
+ background: #111;
+ padding: 1rem 1.5rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 2px solid #f0f;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ nav .logo {
+ font-size: 1.5rem;
+ font-weight: 800;
+ color: #f0f;
+ text-transform: uppercase;
+ text-decoration: none;
+ letter-spacing: 0.2em;
+ }
+ nav ul {
+ list-style: none;
+ display: flex;
+ gap: 2rem;
+ }
+ nav ul li a {
+ color: #ccc;
+ text-decoration: none;
+ font-weight: 700;
+ text-transform: uppercase;
+ font-size: 0.9rem;
+ letter-spacing: 0.1em;
+ transition: 0.2s;
+ }
+ nav ul li a:hover {
+ color: #f0f;
+ }
+ /* HAMBURGER - hidden by default */
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 5px;
+ }
+ .hamburger span {
+ display: block;
+ width: 30px;
+ height: 3px;
+ background: #f0f;
+ transition: 0.3s;
+ }
+ /* RESPONSIVE 768 */
+ @media (max-width: 768px) {
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background: #111;
+ padding: 1rem;
+ border-bottom: 2px solid #f0f;
+ }
+ nav ul.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ h1 {
+ font-size: 2rem;
+ }
+ h2 {
+ font-size: 1.5rem;
+ }
+ .section {
+ padding: 2rem 1rem;
+ }
+ }
+ /* TEL LINK */
+ .tel-link {
+ display: inline-block;
+ background: #0ff;
+ color: #0a0a0a;
+ padding: 0.6rem 1.5rem;
+ font-weight: 700;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ border: 2px solid #0ff;
+ transition: 0.2s;
+ }
+ .tel-link:hover {
+ background: transparent;
+ color: #0ff;
+ box-shadow: 0 0 20px #0ff;
+ }
+ /* CARDS */
+ .card {
+ background: #1a1a1a;
+ border: 1px solid #333;
+ padding: 1.5rem;
+ margin: 1rem 0;
+ box-shadow: 4px 4px 0 #f0f;
+ }
+ .card h3 {
+ margin-bottom: 0.5rem;
+ }
+ /* FAQ */
+ .faq-item {
+ border-bottom: 1px solid #333;
+ padding: 1rem 0;
+ }
+ .faq-question {
+ font-weight: 700;
+ color: #f0f;
+ cursor: pointer;
+ font-size: 1.1rem;
+ }
+ .faq-answer {
+ margin-top: 0.5rem;
+ color: #aaa;
+ }
+ /* FOOTER */
+ footer {
+ background: #111;
+ text-align: center;
+ padding: 2rem 1rem;
+ border-top: 2px solid #f0f;
+ margin-top: auto;
+ }
+ footer p {
+ font-size: 0.8rem;
+ color: #888;
+ }
+ /* ADDITIONAL NEON EFFECTS */
+ .glow {
+ text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+ }
+ .border-glow {
+ border-color: #f0f;
+ box-shadow: 0 0 10px #f0f;
+ }
+ </style>
 </head>
 <body>
 
 <main>
-  <section class="section full-bleed">
-    <h1>백링크 자동화 프로그램과 서버 웜업, 함께 알아야 하는 이유</h1>
-    <p>백링크 자동화 프로그램은 반복적인 링크 등록·관리 작업을 도구로 처리해 운영 효율을 높이는 방식입니다. 다만 새 도메인이나 서버를 급하게 사용하면 신뢰도 이슈가 생길 수 있어, 서버 웜업(warm-up) 과정과 함께 이해하는 것이 좋습니다. 마포 권역에서 관련 정보를 참고하는 운영자를 위해 기본 개념을 정리했습니다.</p>
-  </section>
+ <section class="section full-bleed">
+ <h1>백링크 자동화 프로그램과 서버 웜업, 함께 알아야 하는 이유</h1>
+ <p>백링크 자동화 프로그램은 반복적인 링크 등록·관리 작업을 도구로 처리해 운영 효율을 높이는 방식입니다. 다만 새 도메인이나 서버를 급하게 사용하면 신뢰도 이슈가 생길 수 있어, 서버 웜업(warm-up) 과정과 함께 이해하는 것이 좋습니다. 마포 권역에서 관련 정보를 참고하는 운영자를 위해 기본 개념을 정리했습니다.</p>
+ </section>
 
-  <section class="section">
-    <h2>수동 관리와 자동화 프로그램 비교</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>구분</th>
-          <th>수동 관리</th>
-          <th>자동화 프로그램</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>소요 시간</td>
-          <td>등록·점검마다 개별 작업 필요</td>
-          <td>반복 작업을 예약·일괄 처리</td>
-        </tr>
-        <tr>
-          <td>기록 관리</td>
-          <td>별도 문서로 직접 정리</td>
-          <td>등록 현황이 도구 내에 자동 기록</td>
-        </tr>
-        <tr>
-          <td>확장성</td>
-          <td>사이트 수가 늘면 관리 부담 증가</td>
-          <td>다수 사이트를 같은 방식으로 관리 가능</td>
-        </tr>
-        <tr>
-          <td>초기 준비</td>
-          <td>별도 설정 없이 바로 시작 가능</td>
-          <td>서버·계정 웜업 등 사전 준비가 필요</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+ <section class="section">
+ <h2>수동 관리와 자동화 프로그램 비교</h2>
+ <table>
+ <thead>
+ <tr>
+ <th>구분</th>
+ <th>수동 관리</th>
+ <th>자동화 프로그램</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>소요 시간</td>
+ <td>등록·점검마다 개별 작업 필요</td>
+ <td>반복 작업을 예약·일괄 처리</td>
+ </tr>
+ <tr>
+ <td>기록 관리</td>
+ <td>별도 문서로 직접 정리</td>
+ <td>등록 현황이 도구 내에 자동 기록</td>
+ </tr>
+ <tr>
+ <td>확장성</td>
+ <td>사이트 수가 늘면 관리 부담 증가</td>
+ <td>다수 사이트를 같은 방식으로 관리 가능</td>
+ </tr>
+ <tr>
+ <td>초기 준비</td>
+ <td>별도 설정 없이 바로 시작 가능</td>
+ <td>서버·계정 웜업 등 사전 준비가 필요</td>
+ </tr>
+ </tbody>
+ </table>
+ </section>
 
-  <section class="section">
-    <h2>서버 웜업이 필요한 이유</h2>
-    <div class="card glow border-glow">
-      <p>새로 준비한 서버나 도메인을 처음부터 많은 요청과 함께 사용하면 이상 신호로 분류될 수 있습니다. 초기에는 사용량을 낮게 유지하고 점차 늘려가는 방식이 일반적으로 권장됩니다.</p>
-    </div>
-  </section>
+ <section class="section">
+ <h2>서버 웜업이 필요한 이유</h2>
+ <div class="card glow border-glow">
+ <p>새로 준비한 서버나 도메인을 처음부터 많은 요청과 함께 사용하면 이상 신호로 분류될 수 있습니다. 초기에는 사용량을 낮게 유지하고 점차 늘려가는 방식이 일반적으로 권장됩니다.</p>
+ </div>
+ </section>
 
-  <section class="faq-item">
-    <p class="faq-question">자동화 프로그램을 쓰면 웜업 과정이 필요 없나요?</p>
-    <p class="faq-answer">자동화 도구를 사용하더라도 새 서버나 계정이라면 초기 사용량 조절 과정은 별도로 필요합니다.</p>
-  </section>
-  <section class="faq-item">
-    <p class="faq-question">초보자도 바로 활용할 수 있나요?</p>
-    <p class="faq-answer">기본 개념을 먼저 익힌 뒤 적용하면 시행착오를 줄일 수 있어, 개념 이해를 우선 권장합니다.</p>
-  </section>
+ <section class="faq-item">
+ <p class="faq-question">자동화 프로그램을 쓰면 웜업 과정이 필요 없나요?</p>
+ <p class="faq-answer">자동화 도구를 사용하더라도 새 서버나 계정이라면 초기 사용량 조절 과정은 별도로 필요합니다.</p>
+ </section>
+ <section class="faq-item">
+ <p class="faq-question">초보자도 바로 활용할 수 있나요?</p>
+ <p class="faq-answer">기본 개념을 먼저 익힌 뒤 적용하면 시행착오를 줄일 수 있어, 개념 이해를 우선 권장합니다.</p>
+ </section>
 
-  <section class="section">
-    <h2>연락 방법</h2>
-    <p>마포 권역 관련 문의는 아래 연락처를 이용해주세요.</p>
-    <a class="btn tel-link" href="tel:+821062790862">+821062790862</a>
-  </section>
+ <section class="section">
+ <h2>연락 방법</h2>
+ <p>마포 권역 관련 문의는 아래 연락처를 이용해주세요.</p>
+ 
+ </section>
 </main>
 
 
