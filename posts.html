@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · sf-t3-1779642675702-167</title>
+  <meta name="description" content="sf-t3-1779642675702-167에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-167.maphoshirts.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* RESET & BASE */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+
+ body {
+ font-family: Impact, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+ background: #000;
+ color: #fff;
+ line-height: 1.1;
+ -webkit-font-smoothing: antialiased;
+ overflow-x: hidden;
+ width: 100%;
+ }
+
+ /* TYPOGRAPHY */
+ h1, h2, h3, h4 {
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: -0.02em;
+ }
+
+ h1 {
+ font-size: clamp(3.5rem, 15vw, 7rem);
+ line-height: 0.9;
+ }
+ h2 {
+ font-size: clamp(2.8rem, 10vw, 5rem);
+ line-height: 0.95;
+ }
+ h3 {
+ font-size: clamp(2rem, 6vw, 3.5rem);
+ }
+ p, li, blockquote {
+ font-family: system-ui, 'Segoe UI', sans-serif;
+ font-weight: 400;
+ font-size: 1.25rem;
+ line-height: 1.4;
+ }
+
+ a {
+ color: #fff;
+ text-decoration: none;
+ border-bottom: 3px solid transparent;
+ transition: border 0.1s;
+ }
+ a:hover {
+ border-bottom: 3px solid #ff3b00;
+ }
+
+ /* BUTTON / CTA */
+ .btn {
+ display: inline-block;
+ background: #ff3b00;
+ color: #000;
+ font-family: Impact, system-ui, sans-serif;
+ font-size: 1.8rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ padding: 0.6em 1.4em;
+ border: 4px solid #fff;
+ outline: 3px solid #ff3b00;
+ outline-offset: -8px;
+ transition: all 0.15s;
+ cursor: pointer;
+ letter-spacing: 0.05em;
+ transform: rotate(-1deg);
+ margin: 0.5em 0;
+ }
+ .btn:hover {
+ background: #fff;
+ color: #000;
+ border-color: #ff3b00;
+ outline-color: #000;
+ transform: rotate(1deg) scale(1.02);
+ }
+
+ /* LAYOUT HELPERS */
+ .full-bleed {
+ width: 100vw;
+ margin-left: calc(-50vw + 50%);
+ }
+
+ .section-gap {
+ padding: 72px 24px;
+ margin-top: 0;
+ margin-bottom: 0;
+ }
+
+ .container {
+ max-width: 1400px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+
+ /* SKEW / ROTATE UTILITY */
+ .skew-box {
+ display: inline-block;
+ transform: skew(-5deg);
+ border: 4px solid #ff3b00;
+ background: #0a0a0a;
+ padding: 0.2em 0.6em;
+ }
+ .skew-box > * {
+ transform: skew(5deg);
+ display: inline-block;
+ }
+
+ .rotate-neg {
+ transform: rotate(-2deg);
+ }
+ .rotate-pos {
+ transform: rotate(2deg);
+ }
+
+ /* ============ HEADER ============ */
+ header {
+ padding: 24px 24px 0;
+ border-bottom: 4px solid #ff3b00;
+ background: #000;
+ position: relative;
+ z-index: 100;
+ }
+
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 16px 48px;
+ max-width: 1400px;
+ margin: 0 auto;
+ }
+
+ .logo {
+ font-size: 2.4rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ color: #ff3b00;
+ letter-spacing: -0.03em;
+ line-height: 0.9;
+ border: none;
+ transform: rotate(-1deg);
+ }
+ .logo:hover {
+ border: none;
+ color: #fff;
+ }
+
+ /* Navigation */
+ nav ul {
+ display: flex;
+ gap: 48px;
+ list-style: none;
+ align-items: center;
+ }
+ nav a {
+ font-family: Impact, system-ui, sans-serif;
+ font-size: 1.6rem;
+ text-transform: uppercase;
+ letter-spacing: 0.02em;
+ border-bottom: 3px solid transparent;
+ padding-bottom: 4px;
+ }
+ nav a:hover {
+ border-bottom-color: #ff3b00;
+ }
+
+ /* Hamburger (desktop hidden) */
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 6px;
+ background: none;
+ border: 3px solid #fff;
+ padding: 8px 10px;
+ cursor: pointer;
+ }
+ .hamburger span {
+ display: block;
+ width: 30px;
+ height: 4px;
+ background: #fff;
+ border-radius: 0;
+ }
+
+ /* mobile nav toggle */
+ #nav-toggle {
+ display: none;
+ }
+
+ /* ============ HERO ============ */
+ #hero {
+ padding: 72px 24px 120px;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 48px 80px;
+ align-items: start;
+ max-width: 1400px;
+ margin: 0 auto;
+ }
+
+ .hero-text {
+ position: relative;
+ z-index: 2;
+ }
+
+ .hero-text h1 {
+ margin-bottom: 32px;
+ border-left: 8px solid #ff3b00;
+ padding-left: 24px;
+ }
+
+ .hero-text .subhead {
+ font-size: 1.8rem;
+ font-weight: 700;
+ color: #aaa;
+ margin-bottom: 48px;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ }
+
+ .hero-text p {
+ font-size: 1.4rem;
+ margin: 24px 0 48px;
+ max-width: 600px;
+ }
+
+ .hero-visual {
+ position: relative;
+ background: repeating-linear-gradient(45deg, #1a1a1a 0px, #1a1a1a 8px, #000 8px, #000 16px);
+ border: 6px solid #ff3b00;
+ transform: rotate(3deg);
+ min-height: 400px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 8rem;
+ text-align: center;
+ box-shadow: 24px 24px 0 #ff3b00;
+ margin-top: 20px;
+ }
+
+ .hero-visual span {
+ transform: rotate(-5deg);
+ display: block;
+ font-size: clamp(4rem, 15vw, 9rem);
+ line-height: 1;
+ text-shadow: 8px 8px 0 #000, -4px -4px 0 #ff3b00;
+ }
+
+ /* ============ REVIEWS ============ */
+ #reviews {
+ padding: 120px 24px 72px;
+ border-top: 6px solid #ff3b00;
+ border-bottom: 6px solid #ff3b00;
+ background: #0a0a0a;
+ margin: 0;
+ }
+
+ #reviews h2 {
+ margin-bottom: 72px;
+ display: inline-block;
+ border-bottom: 6px solid #ff3b00;
+ padding-bottom: 8px;
+ transform: rotate(-1deg);
+ }
+
+ .review-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 48px;
+ max-width: 1400px;
+ margin: 0 auto;
+ }
+
+ .review-card {
+ background: #111;
+ border: 4px solid #fff;
+ padding: 32px 24px;
+ transform: rotate(var(--rot, 0deg));
+ transition: transform 0.2s;
+ }
+ .review-card:nth-child(odd) {
+ --rot: -1.5deg;
+ }
+ .review-card:nth-child(even) {
+ --rot: 1.5deg;
+ }
+ .review-card:hover {
+ transform: rotate(0deg) scale(1.02);
+ border-color: #ff3b00;
+ }
+
+ .review-card .stars {
+ color: #ff3b00;
+ font-size: 2rem;
+ letter-spacing: 4px;
+ margin-bottom: 12px;
+ }
+ .review-card blockquote {
+ font-size: 1.2rem;
+ margin: 16px 0;
+ color: #ddd;
+ line-height: 1.4;
+ }
+ .review-card .author {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-size: 1.1rem;
+ text-transform: uppercase;
+ border-top: 2px solid #333;
+ padding-top: 16px;
+ margin-top: 16px;
+ }
+ .review-card .author strong {
+ color: #ff3b00;
+ }
+ .review-card .date {
+ color: #888;
+ font-size: 0.9rem;
+ }
+
+ /* ============ FEATURES / EXTRA ============ */
+ #features {
+ padding: 120px 24px;
+ }
+
+ .feature-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 48px;
+ max-width: 1400px;
+ margin: 0 auto;
+ }
+
+ .feature-item {
+ border: 4px solid #fff;
+ padding: 48px 32px;
+ background: #060606;
+ position: relative;
+ }
+ .feature-item::before {
+ content: "⚡";
+ position: absolute;
+ top: -24px;
+ left: 24px;
+ font-size: 3rem;
+ background: #000;
+ padding: 0 8px;
+ }
+ .feature-item h3 {
+ font-size: 2.2rem;
+ margin: 24px 0 16px;
+ }
+ .feature-item p {
+ font-size: 1.1rem;
+ color: #bbb;
+ }
+
+ /* ============ FOOTER ============ */
+ footer {
+ border-top: 6px solid #ff3b00;
+ padding: 72px 24px 48px;
+ background: #000;
+ }
+
+ .footer-inner {
+ max-width: 1400px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 32px;
+ }
+
+ .footer-inner .phone {
+ font-size: 2.2rem;
+ font-weight: 700;
+ color: #ff3b00;
+ border: 4px solid #fff;
+ padding: 8px 24px;
+ transform: rotate(-1deg);
+ }
+ .footer-inner .phone:hover {
+ background: #ff3b00;
+ color: #000;
+ border-color: #ff3b00;
+ }
+
+ .footer-inner small {
+ font-size: 1.1rem;
+ color: #666;
+ text-transform: uppercase;
+ }
+
+ /* ============ RESPONSIVE ============ */
+ @media (max-width: 768px) {
+ .section-gap {
+ padding: 48px 16px;
+ }
+ #hero {
+ padding: 48px 16px 72px;
+ }
+ .container {
+ padding: 0 16px;
+ }
+
+ /* header */
+ .header-inner {
+ padding: 0;
+ }
+ .hamburger {
+ display: flex;
+ }
+ nav ul {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ gap: 16px;
+ padding: 32px 0;
+ border-top: 4px solid #ff3b00;
+ margin-top: 16px;
+ }
+ #nav-toggle:checked + .hamburger + nav ul {
+ display: flex;
+ }
+ nav a {
+ font-size: 2rem;
+ display: block;
+ text-align: center;
+ }
+
+ /* hero */
+ .hero-grid {
+ grid-template-columns: 1fr;
+ gap: 48px;
+ }
+ .hero-visual {
+ min-height: 250px;
+ transform: rotate(1deg);
+ box-shadow: 12px 12px 0 #ff3b00;
+ }
+ .hero-visual span {
+ font-size: 4rem;
+ }
+
+ /* features */
+ .feature-grid {
+ grid-template-columns: 1fr;
+ gap: 48px;
+ }
+
+ /* review card */
+ .review-grid {
+ grid-template-columns: 1fr;
+ }
+
+ /* footer */
+ .footer-inner {
+ flex-direction: column;
+ text-align: center;
+ }
+ }
+
+ /* EXTRA raw texture lines */
+ .raw-texture {
+ background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,59,0,0.08) 3px, rgba(255,59,0,0.08) 6px);
+ }
+
+ /* selected text */
+ ::selection {
+ background: #ff3b00;
+ color: #000;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · sf-t3-1779642675702-167">
+  <meta property="og:description" content="sf-t3-1779642675702-167에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-167.maphoshirts.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <a href="#" class="logo">백링크<br>파괴자</a>
+ <input type="checkbox" id="nav-toggle" hidden>
+ <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
+ 
+ </label>
+ <nav>
+ <ul>
+ <li><a href="#hero">홈</a></li>
+ <li><a href="#reviews">리뷰</a></li>
+ <li><a href="#features">특징</a></li>
+ 
+ </ul>
+ </nav>
+ </div>
+</header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-lbhnk7.html">백링크 자동화 프로그램 현장에서 놓치기 쉬운 포인트를 기록해봤다</a>
+        <p class="post-item__summary">마포 지역에서 서버 웜업과 안정적인 웹사이트 운영을 고민하는 분들이라면 백링크 자동화 프로그램 활용에 큰 관심을 두기 마련입니다. 검색 엔진 최적화를 효율적으로 수행하기 위해서는 단순히 외부 링크를</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1422.html">마포 지역 서버실에서 자동화 프로그램을 올리기 전에 반드시 거쳐야 하는 네트워크 예열 과정</a>
+        <p class="post-item__summary">기계는 거짓말을 하지 않는다. 준비되지 않은 서버에 대량의 자동화 구동 명령을 내리는 행동은 엔진 오일도 없는 차량을 거칠게 밟아대는 짓과 다름없다. 특히 마포의 회선망을 끌어 쓰는 환경에서는 초반</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9451.html">마포 지역 생활 편의 시설 이용 가이드</a>
+        <p class="post-item__summary">마포는 서울에서도 접근성이 뛰어나고 다양한 상권이 형성된 지역입니다. 홍대 일대부터 합정, 망원 지역까지 젊은 에너지와 전통 문화가 어우러져 있으며, 최근 몇 년간 지속적으로 발전하고 있습니다. 주</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9452.html">마포 지역 모임 문화와 프리미엄 여가 공간 선택 가이드</a>
+        <p class="post-item__summary">마포는 서울 중심부에 위치한 활발한 상업 지구로, 다양한 업종의 기업과 방문객들이 모여드는 지역입니다. 이곳은 비즈니스 미팅부터 친구 모임까지 다채로운 활동이 이루어지는 허브로 알려져 있으며, 지역</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9453.html">백링크 자동화 프로그램으로 마포에서 서버 웜업 효과를 극대화하다</a>
+        <p class="post-item__summary">백링크 자동화 프로그램은 링크 수면과 같은 문제를 해결해 줍니다. 자동화된 트래픽 분산으로 검색엔진 명중률이 상승하고, 지속적인 업데이트가 필요 없게 됩니다. 운용자는 간단한 설정만으로 완전 자동화</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9454.html">마포의 숨은 매력, 지역 비즈니스 정보와 함께 발견하기</a>
+        <p class="post-item__summary">마포 지역은 서울의 문화와 상업이 만나는 중심지로, 다양한 업종의 사업체들이 모여 있는 곳입니다. 한강 변의 자연환경부터 번화가의 활기찬 상점들까지, 마포는 주민과 방문객 모두에게 매력적인 생활 공</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9455.html">백링크 자동화로 서버 웜업 효율을 높이는 마포 비즈니스 전략</a>
+        <p class="post-item__summary">마포에서 서버 웜업을 운영한다면 자연스러운 트래픽 유입과 함께 사이트의 신뢰도를 높일 방법을 고민하게 된다. 단순히 기술적인 서버예열만으로는 부족하며, 외부에서 유입되는 방문자 경로를 체계적으로 설</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9456.html">백링크 자동화 프로그램으로 마포 비즈니스 성장 가속화</a>
+        <p class="post-item__summary">백링크 자동화 프로그램은 웹사이트의 검색엔진 최적화에 핵심적인 역할을 합니다. 반복적인 백링크 구축이 수작업으로는 시간과 노력이 많이 소모되기 때문에, 자동화 솔루션이 인기를 끌고 있습니다. 마포 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9457.html">마포 지역 비즈니스의 온라인 가시성을 높이는 방법</a>
+        <p class="post-item__summary">마포는 서울의 주요 상업지구로서 다양한 소상공인과 중소기업들이 활발하게 운영 중입니다. 지역 비즈니스가 성장하기 위해서는 단순히 오프라인 고객 확보만으로는 부족하며, 온라인 검색 결과에서의 노출이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9458.html">마포 지역의 로컬 비즈니스 가이드: 생활 편의시설 찾기</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치한 활기찬 지역으로, 다양한 상점과 서비스 시설이 밀집해 있습니다. 주민들과 방문객들이 필요로 하는 여러 종류의 생활 편의시설을 찾을 수 있어 많은 사람들이 이 지역을 찾</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9459.html">서버 웜업과 백링크 자동화 프로그램의 실제 활용 방식</a>
+        <p class="post-item__summary">서버 웜업 과정에서 가장 중요한 것은 초기 트래픽 패턴을 안정적으로 형성하는 일이다. 마포 지역을 대상으로 서비스를 준비 중이라면 지역 기반 검색 결과에서의 노출도 함께 고려해야 한다. 단순히 방문</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9460.html">백링크 자동화 프로그램으로 마포 서버 웜업 성과를 끌어올리다</a>
+        <p class="post-item__summary">마포의 서버 웜업 서비스는 트래픽과 전환을 높이기 위해 신뢰성 있는 백링크 구축이 필수적입니다. 과거 수작업으로 이뤄졌던 백링크 작업은 시간이 많이 소요되고 오류가 발생하기 쉽습니다. 이를 해결하기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9461.html">마포 지역 문화생활 완벽 가이드: 홍대와 합정 오락시설 둘러보기</a>
+        <p class="post-item__summary">마포구는 서울의 젊은 문화와 전통이 만나는 특별한 지역입니다. 홍대의 활기찬 거리부터 합정의 조용한 카페 골목까지, 이곳은 다양한 세대의 방문객들을 매료시켜 왔습니다. 특히 주말에는 가족 단위 방문</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9462.html">마포 지역 단체 활동과 회사 행사를 위한 실용 가이드</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치한 활동적인 지역으로, 다양한 기업과 단체가 활동하는 곳입니다. 지역 내 교통 접근성이 뛰어나고, 한강 공원과 상업 시설이 함께 어우러져 있어 비즈니스 미팅이나 팀 이벤트</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9463.html">백링크 자동화 프로그램과 마포 서버 웜업을 함께 고려해야 하는 이유</a>
+        <p class="post-item__summary">백링크 자동화 프로그램을 도입하면 사이트 유입 경로를 체계적으로 확장할 수 있다. 특히 마포 지역에서 서버 웜업 서비스를 병행할 경우 검색 엔진의 반응 속도와 크롤링 빈도가 개선되는 사례가 확인되고</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9464.html">마포 지역의 비즈니스 네트워크와 디지털 환경 변화</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치하면서도 다양한 크기의 사업체들이 성장하는 지역입니다. 전통 상권과 신흥 비즈니스 지구가 공존하는 마포에서는 온라인과 오프라인의 연결이 점점 더 중요해지고 있습니다. 지역</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-9465.html">마포 서버 웜업에 백링크 자동화 프로그램이 이끄는 SEO 혁신</a>
+        <p class="post-item__summary">마포의 서버 웜업 업무에 백링크 자동화 프로그램이 핵심 역할을 맡았다. 이 도구는 여러 도메인을 빠르게 인덱싱하여 검색 엔진에 최적의 인사이트를 제공한다. 또한 일관된 업데이트를 통해 트래픽 변동을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0387.html">백링크 자동화 프로그램 개발을 위한 4</a>
+        <p class="post-item__summary">고성능 마케팅 툴을 구축하기 위해서는 안정적인 데이터 흐름과 에이전트 간의 유기적인 연동이 필수적입니다. 단순히 스크립트를 짜는 것을 넘어, 각 에이전트가 자율적으로 판단하고 오류를 수정하는 구조를</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0388.html">마포 홍대 로컬 럭셔리 밤문화 가이드 활용 및 백링크 자동화 프로그램의 관계</a>
+        <p class="post-item__summary">여러분은 밤문화 정보를 검색할 때 어떤 기준을 가지고 신뢰할 수 있는 업체를 선별하시나요? 최근 홍대와 마포 일대의 고급 유흥 환경에 대한 관심이 높아지면서 검증되지 않은 정보들이 온라인에 범람하고</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0389.html">백링크 자동화 프로그램 활용한 마포 유흥 투명 정찰제 가격 정보 디렉토리 구축</a>
+        <p class="post-item__summary">온라인상에서 효율적인 정보를 수집하기 위해 백링크 자동화 프로그램 도구를 사용하는 경우가 많습니다. 이러한 기술은 데이터의 연관성을 파악하여 신뢰도 높은 자료를 필터링하는 데 기여합니다. 특히 지역</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
